@@ -1,0 +1,40 @@
+<form class="form-lyrics" [formGroup]="lyricsForm" novalidate (ngSubmit)="onSubmitLyrics()">
+  <mat-form-field appearance="outline">
+    <mat-label i18n="@@titleLabel">Title</mat-label>
+    <input matInput i18n-placeholder="@@titlePlaceholder" placeholder="Music title" formControlName="title">
+  </mat-form-field>
+  <mat-form-field class="form-field" appearance="outline">
+    <mat-label i18n="@@lyricsLabel">Lyrics</mat-label>
+    <!-- <button mat-button *ngIf="lyricsForm.controls.stanza" matSuffix mat-icon-button aria-label="Clear"
+      (click)="value=''">
+      <mat-icon>close</mat-icon>
+    </button> -->
+    <textarea matInput i18n-placeholder="@@lyricsPlaceholder" placeholder="Write a complete lyrics of the song"
+      formControlName="lyrics"></textarea>
+
+    <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+    <mat-hint i18n="@@lyricsSlideHint">A stanza is a slide</mat-hint>
+  </mat-form-field>
+
+  <!-- <button mat-button *ngIf="lyricsForm.controls.stanza" matSuffix mat-icon-button aria-label="Clear"
+        (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button> -->
+  <div class="form-field__logo" *ngIf="!lyricsForm.controls.logo.value">
+    <p i18n="@@dropLogoFirstInfo">Drop your logo here to place on each slide</p>
+    <p i18n="@@dropLogoSecondInfo">or click to choose a photo</p>
+    <input class="input-logo" type="file" id="my_file" accept=".jpg, .jpeg, .png, .gif"
+      (change)="onFileChange($event)" />
+    <input type="hidden" name="fileHidden" />
+  </div>
+  <div class="form-field__logo" *ngIf="lyricsForm.controls.logo.value" [@fadeInOut]>
+    <img [src]="lyricsForm.controls.logo.value" alt="Slides Logo">
+  </div>
+  <mat-checkbox class="form-field" color="primary" formControlName="uppercase" i18n="@@lyricsUppercaseCheckbox">
+    All Text to Uppercase
+  </mat-checkbox>
+
+  <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+  <button mat-raised-button type="submit" [disabled]="lyricsForm.invalid" color="primary"
+    i18n="@@lyricsGenerateButton">Generate Slides</button>
+</form>

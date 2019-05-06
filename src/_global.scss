@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6e6e6e;
+  outline: 1px solid #333;
+}
+::-webkit-scrollbar-trac {
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+}
+
+.mat-form-field-appearance-outline {
+  .mat-form-field-subscript-wrapper {
+    padding: unset !important;
+  }
+}
