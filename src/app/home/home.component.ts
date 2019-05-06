@@ -57,61 +57,32 @@ export class HomeComponent implements OnInit {
   }
 
   onSubmitLyrics() {
-    console.log(this.lyricsForm.getRawValue());
-
     const pptx = new PptxGenJS();
-    // const slide = pptx.addNewSlide();
-    // const opts = { x: 1.0, y: 1.0, fontSize: 42, color: '00FF00' };
-    // slide.addText('Hello World!', opts);
-    // pptx.save();
 
     const { title, uppercase, logo } = this.lyricsForm.getRawValue();
     let { lyrics } = this.lyricsForm.getRawValue();
 
-    // const lyrics = this.lyricsForm.controls.lyrics.value;
-
-    // let songLyrics = lyrics;
-
     if (uppercase) {
       lyrics = lyrics.toUpperCase();
     }
-    console.log(lyrics);
-
 
     const slides = lyrics.split('\n\n');
-
-    console.log(slides);
 
     slides.forEach(text => {
       const slide = pptx.addNewSlide();
 
-      const lines = text.split('\n').map(line => {
+      const lines = text.split('\n').map(line => ({ text: line, options: { breakLine: true } }));
 
-        console.log(`${line}\n`);
-
-        return { text: line, options: { breakLine: true } };
-
-      });
-
-      console.log(lines);
-      // Set slide background color
       slide.back = '000000';
-
-      // Set slide default font color
       slide.color = 'FFFFFF';
-
       slide.addText(
         lines,
         { w: '100%', h: '100%', align: 'center', valign: 'top', fontFace: 'Cambria', fontSize: 72 }
       );
-
       slide.addImage({
-        // path: 'https://cdn-images-1.medium.com/max/480/1*fgoprOe4wBh4IBK8gTdyMg.png',
         data: logo,
         x: 9, y: 4.5, w: 1, h: 1
       });
-
-
 
     });
 
