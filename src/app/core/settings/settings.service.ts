@@ -8,6 +8,6 @@ export class SettingsService {
   constructor() { }
 
   getLocale() {
-    return navigator.language;
+    return 'br';
   }
 }

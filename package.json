@@ -1,15 +1,27 @@
 {
   "name": "lyrics-slides",
   "version": "0.0.0",
+  "author": {
+    "name": "Pedro Victor Lopes",
+    "email": "pedlop.dev@gmail.com",
+    "url": "https://github.com/pedlop"
+  },
+  "homepage": "https://github.com/pedlop/lyrics-slides",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedlop/lyrics-slides"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "deploy:git:br": "ng build --configuration=br --output-path docs --base-href /lyrics-slides/ && ngh --dir=docs",
+    "deploy:git": "ng build --prod --output-path docs --base-href /lyrics-slides/ && ngh --dir=docs",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^7.2.14",
     "@angular/cdk": "^7.3.7",
