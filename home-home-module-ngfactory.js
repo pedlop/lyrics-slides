@@ -45839,36 +45839,20 @@ var HomeComponent = /** @class */ (function () {
         }
     };
     HomeComponent.prototype.onSubmitLyrics = function () {
-        console.log(this.lyricsForm.getRawValue());
         var pptx = new pptxgenjs__WEBPACK_IMPORTED_MODULE_2__();
-        // const slide = pptx.addNewSlide();
-        // const opts = { x: 1.0, y: 1.0, fontSize: 42, color: '00FF00' };
-        // slide.addText('Hello World!', opts);
-        // pptx.save();
         var _a = this.lyricsForm.getRawValue(), title = _a.title, uppercase = _a.uppercase, logo = _a.logo;
         var lyrics = this.lyricsForm.getRawValue().lyrics;
-        // const lyrics = this.lyricsForm.controls.lyrics.value;
-        // let songLyrics = lyrics;
         if (uppercase) {
             lyrics = lyrics.toUpperCase();
         }
-        console.log(lyrics);
         var slides = lyrics.split('\n\n');
-        console.log(slides);
         slides.forEach(function (text) {
             var slide = pptx.addNewSlide();
-            var lines = text.split('\n').map(function (line) {
-                console.log(line + "\n");
-                return { text: line, options: { breakLine: true } };
-            });
-            console.log(lines);
-            // Set slide background color
+            var lines = text.split('\n').map(function (line) { return ({ text: line, options: { breakLine: true } }); });
             slide.back = '000000';
-            // Set slide default font color
             slide.color = 'FFFFFF';
             slide.addText(lines, { w: '100%', h: '100%', align: 'center', valign: 'top', fontFace: 'Cambria', fontSize: 72 });
             slide.addImage({
-                // path: 'https://cdn-images-1.medium.com/max/480/1*fgoprOe4wBh4IBK8gTdyMg.png',
                 data: logo,
                 x: 9, y: 4.5, w: 1, h: 1
             });
