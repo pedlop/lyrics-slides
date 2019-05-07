@@ -23,21 +23,21 @@
 
   <div class="form-field__colors responsive-content_web">
     <mat-form-field appearance="outline">
-      <mat-label>Slide background color</mat-label>
+      <mat-label i18n="@@backgroundColorLabel">Slide background color</mat-label>
       <input matInput [value]="backgroundColor" [style.background]="backgroundColor"
         [style.color]="backgroundColor === '#000000' ? '#FFFFFF' : '#000000'" [cpCancelButton]="true"
         [(colorPicker)]="backgroundColor">
     </mat-form-field>
 
     <mat-form-field appearance="outline">
-      <mat-label>Slide text color</mat-label>
+      <mat-label i18n="@@textColorLabel">Slide text color</mat-label>
       <input matInput [value]="textColor" [style.background]="textColor"
         [style.color]="textColor === '#FFFFFF' ? '#000000' : '#FFFFFF'" [cpCancelButton]="true"
         [(colorPicker)]="textColor">
     </mat-form-field>
 
     <mat-form-field appearance="outline">
-      <mat-label>Font Size</mat-label>
+      <mat-label i18n="@@fontSizeLabel">Font Size</mat-label>
       <input matInput #fontSize maxlength="2" type="number" placeholder="Font Size" formControlName="fontSize">
       <mat-hint align="end">{{fontSize.value.length}} / 2</mat-hint>
     </mat-form-field>

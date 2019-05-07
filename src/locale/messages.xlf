@@ -27,44 +27,67 @@
         <source>Write a complete lyrics of the song</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="lyricsSlideHint" datatype="html">
         <source>A stanza is a slide</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="dropLogoFirstInfo" datatype="html">
         <source>Drop your logo here to place on each slide</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="dropLogoSecondInfo" datatype="html">
         <source>or click to choose a photo</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="lyricsUppercaseCheckbox" datatype="html">
-        <source>
-    All Text to Uppercase
-  </source>
+      <trans-unit id="backgroundColorLabel" datatype="html">
+        <source>Slide background color</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textColorLabel" datatype="html">
+        <source>Slide text color</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="lyricsGenerateButton" datatype="html">
-        <source>Generate Slides</source>
+      <trans-unit id="fontSizeLabel" datatype="html">
+        <source>Font Size</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lyricsUppercaseCheckbox" datatype="html">
+        <source>All
+    Text to Uppercase
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lyricsGenerateButton" datatype="html">
+        <source>
+    Generate Slides
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">50</context>
         </context-group>
       </trans-unit>
     </body>

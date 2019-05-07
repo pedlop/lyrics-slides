@@ -58,6 +58,30 @@
           <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="backgroundColorLabel" datatype="html">
+        <source>Slide background color</source>
+        <target>Cor de fundo dos slides</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="textColorLabel" datatype="html">
+        <source>Slide text color</source>
+        <target>Cor do texto dos slides</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fontSizeLabel" datatype="html">
+        <source>Font Size</source>
+        <target>Tamanho da Fonte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="lyricsUppercaseCheckbox" datatype="html">
         <source>All Text to Uppercase</source>
         <target>Todo o texto em Caixa Alta</target>
