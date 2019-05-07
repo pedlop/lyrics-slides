@@ -24,7 +24,8 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.scss"
@@ -59,15 +60,17 @@
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "src/ngsw-config.json"
             },
-            "br": {
+            "pt": {
               "aot": true,
-              "outputPath": "dist/my-project-br/",
-              "baseHref": "/br/",
-              "i18nFile": "src/locale/messages.br.xlf",
+              "outputPath": "dist/my-project-pt/",
+              "baseHref": "/pt/",
+              "i18nFile": "src/locale/messages.pt.xlf",
               "i18nFormat": "xlf",
-              "i18nLocale": "br",
+              "i18nLocale": "pt",
               "i18nMissingTranslation": "error"
             }
           }
@@ -109,7 +112,8 @@
             ],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ]
           }
         },

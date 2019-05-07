@@ -15,3 +15,15 @@
     padding: unset !important;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .responsive-content_mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .responsive-content_web {
+    display: none !important;
+  }
+}

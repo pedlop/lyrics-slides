@@ -6,7 +6,8 @@
 .form-lyrics {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
+  padding: 2em 0;
 }
 
 textarea {
@@ -39,9 +40,27 @@ textarea {
   cursor: pointer;
 }
 
+.image-logo {
+  max-width: 8em;
+}
+
+.form-field__colors {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1em;
+  mat-form-field  {
+    width: 100%;
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .form-lyrics {
     width: 100%;
+    padding: 1em;
   }
   textarea {
     min-height: 10em;

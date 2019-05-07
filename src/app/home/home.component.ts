@@ -30,6 +30,9 @@ export class HomeComponent implements OnInit {
 
   lyricsForm: FormGroup;
 
+  backgroundColor = '#000000';
+  textColor = '#FFFFFF';
+
   constructor(
     private changeDetectorChange: ChangeDetectorRef,
     private formBuilder: FormBuilder
@@ -40,13 +43,13 @@ export class HomeComponent implements OnInit {
       title: ['', Validators.required],
       lyrics: ['', Validators.required],
       logo: [null, Validators.required],
-      uppercase: [false]
+      uppercase: [false],
+      fontSize: [72, Validators.compose([Validators.required, Validators.minLength(1), Validators.maxLength(2)])]
     });
   }
 
   onFileChange(event) {
     if (event.target.files && event.target.files.length > 0) {
-
       const reader = new FileReader();
       reader.onload = (e: any) => {
         this.lyricsForm.controls.logo.setValue(e.target.result);
@@ -59,12 +62,23 @@ export class HomeComponent implements OnInit {
   onSubmitLyrics() {
     const pptx = new PptxGenJS();
 
-    const { title, uppercase, logo } = this.lyricsForm.getRawValue();
+    const backgroundColor = this.backgroundColor.slice(1);
+    const textColor = this.textColor.slice(1);
+
+    const { title, uppercase, logo, fontSize } = this.lyricsForm.getRawValue();
     let { lyrics } = this.lyricsForm.getRawValue();
 
     if (uppercase) {
       lyrics = lyrics.toUpperCase();
     }
+
+    const cover = pptx.addNewSlide();
+    cover.back = backgroundColor;
+    cover.color = textColor;
+    cover.addText(
+      title,
+      { w: '100%', h: '100%', align: 'center', valign: 'middle', fontFace: 'Cambria', fontSize }
+    );
 
     const slides = lyrics.split('\n\n');
 
@@ -73,11 +87,11 @@ export class HomeComponent implements OnInit {
 
       const lines = text.split('\n').map(line => ({ text: line, options: { breakLine: true } }));
 
-      slide.back = '000000';
-      slide.color = 'FFFFFF';
+      slide.back = backgroundColor;
+      slide.color = textColor;
       slide.addText(
         lines,
-        { w: '100%', h: '100%', align: 'center', valign: 'top', fontFace: 'Cambria', fontSize: 72 }
+        { w: '100%', h: '100%', align: 'center', valign: 'top', fontFace: 'Cambria', fontSize }
       );
       slide.addImage({
         data: logo,

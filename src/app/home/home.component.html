@@ -1,25 +1,15 @@
 <form class="form-lyrics" [formGroup]="lyricsForm" novalidate (ngSubmit)="onSubmitLyrics()">
   <mat-form-field appearance="outline">
     <mat-label i18n="@@titleLabel">Title</mat-label>
-    <input matInput i18n-placeholder="@@titlePlaceholder" placeholder="Music title" formControlName="title">
+    <input matInput i18n-placeholder="@@titlePlaceholder" placeholder="Music title" formControlName="title" required>
   </mat-form-field>
   <mat-form-field class="form-field" appearance="outline">
     <mat-label i18n="@@lyricsLabel">Lyrics</mat-label>
-    <!-- <button mat-button *ngIf="lyricsForm.controls.stanza" matSuffix mat-icon-button aria-label="Clear"
-      (click)="value=''">
-      <mat-icon>close</mat-icon>
-    </button> -->
     <textarea matInput i18n-placeholder="@@lyricsPlaceholder" placeholder="Write a complete lyrics of the song"
-      formControlName="lyrics"></textarea>
-
-    <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+      formControlName="lyrics" required></textarea>
     <mat-hint i18n="@@lyricsSlideHint">A stanza is a slide</mat-hint>
   </mat-form-field>
 
-  <!-- <button mat-button *ngIf="lyricsForm.controls.stanza" matSuffix mat-icon-button aria-label="Clear"
-        (click)="value=''">
-        <mat-icon>close</mat-icon>
-      </button> -->
   <div class="form-field__logo" *ngIf="!lyricsForm.controls.logo.value">
     <p i18n="@@dropLogoFirstInfo">Drop your logo here to place on each slide</p>
     <p i18n="@@dropLogoSecondInfo">or click to choose a photo</p>
@@ -28,13 +18,36 @@
     <input type="hidden" name="fileHidden" />
   </div>
   <div class="form-field__logo" *ngIf="lyricsForm.controls.logo.value" [@fadeInOut]>
-    <img [src]="lyricsForm.controls.logo.value" alt="Slides Logo">
+    <img class="image-logo" [src]="lyricsForm.controls.logo.value" alt="Slides Logo">
   </div>
-  <mat-checkbox class="form-field" color="primary" formControlName="uppercase" i18n="@@lyricsUppercaseCheckbox">
-    All Text to Uppercase
-  </mat-checkbox>
 
-  <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
-  <button mat-raised-button type="submit" [disabled]="lyricsForm.invalid" color="primary"
-    i18n="@@lyricsGenerateButton">Generate Slides</button>
+  <div class="form-field__colors responsive-content_web">
+    <mat-form-field appearance="outline">
+      <mat-label>Slide background color</mat-label>
+      <input matInput [value]="backgroundColor" [style.background]="backgroundColor"
+        [style.color]="backgroundColor === '#000000' ? '#FFFFFF' : '#000000'" [cpCancelButton]="true"
+        [(colorPicker)]="backgroundColor">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Slide text color</mat-label>
+      <input matInput [value]="textColor" [style.background]="textColor"
+        [style.color]="textColor === '#FFFFFF' ? '#000000' : '#FFFFFF'" [cpCancelButton]="true"
+        [(colorPicker)]="textColor">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Font Size</mat-label>
+      <input matInput #fontSize maxlength="2" type="number" placeholder="Font Size" formControlName="fontSize">
+      <mat-hint align="end">{{fontSize.value.length}} / 2</mat-hint>
+    </mat-form-field>
+  </div>
+
+  <mat-slide-toggle class="form-field" color="primary" formControlName="uppercase" i18n="@@lyricsUppercaseCheckbox">All
+    Text to Uppercase
+  </mat-slide-toggle>
+
+  <button mat-raised-button type="submit" [disabled]="lyricsForm.invalid" color="primary" i18n="@@lyricsGenerateButton">
+    Generate Slides
+  </button>
 </form>
