@@ -1,0 +1,98 @@
+{
+  "configVersion": 1,
+  "timestamp": 1557240230560,
+  "index": "/lyrics-slides/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/lyrics-slides/5.19a0b2d34abcc6c6a79e.js",
+        "/lyrics-slides/es2015-polyfills.1e04665e16f944715fd2.js",
+        "/lyrics-slides/favicon.ico",
+        "/lyrics-slides/index.html",
+        "/lyrics-slides/main.8f38b31f6a00b4a13ac7.js",
+        "/lyrics-slides/polyfills.8bbb231b43165d65d357.js",
+        "/lyrics-slides/runtime.231ee63dbc20b76778c6.js",
+        "/lyrics-slides/scripts.b177a00d214e79b37d51.js",
+        "/lyrics-slides/styles.6207022d86134a05eebb.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/lyrics-slides/assets/icons/icon-128x128.png",
+        "/lyrics-slides/assets/icons/icon-144x144.png",
+        "/lyrics-slides/assets/icons/icon-152x152.png",
+        "/lyrics-slides/assets/icons/icon-192x192.png",
+        "/lyrics-slides/assets/icons/icon-384x384.png",
+        "/lyrics-slides/assets/icons/icon-512x512.png",
+        "/lyrics-slides/assets/icons/icon-72x72.png",
+        "/lyrics-slides/assets/icons/icon-96x96.png",
+        "/lyrics-slides/assets/splash/ipad_splash.png",
+        "/lyrics-slides/assets/splash/ipadpro1_splash.png",
+        "/lyrics-slides/assets/splash/ipadpro2_splash.png",
+        "/lyrics-slides/assets/splash/ipadpro3_splash.png",
+        "/lyrics-slides/assets/splash/iphone5_splash.png",
+        "/lyrics-slides/assets/splash/iphone6_splash.png",
+        "/lyrics-slides/assets/splash/iphoneplus_splash.png",
+        "/lyrics-slides/assets/splash/iphonex_splash.png",
+        "/lyrics-slides/assets/splash/iphonexr_splash.png",
+        "/lyrics-slides/assets/splash/iphonexsmax_splash.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/lyrics-slides/5.19a0b2d34abcc6c6a79e.js": "48a7c3148a0b264e2e02bfa754782c2ff7c9aba5",
+    "/lyrics-slides/assets/icons/icon-128x128.png": "2557cf96b28150368aa8bd194afa9bd6fa1b1040",
+    "/lyrics-slides/assets/icons/icon-144x144.png": "8311fbfea27ab2273a539b592ee855d0c5f0385b",
+    "/lyrics-slides/assets/icons/icon-152x152.png": "fb5a58e985179fb1a93c3f0561a85501507b610a",
+    "/lyrics-slides/assets/icons/icon-192x192.png": "ade4daef8209de730f7b0a1a916d84140b8557b2",
+    "/lyrics-slides/assets/icons/icon-384x384.png": "dc2ca3ac8f8fddf44ac632cc67ef745504f196d4",
+    "/lyrics-slides/assets/icons/icon-512x512.png": "53f28c7e9a050ebbb71be9b0506856a58319a822",
+    "/lyrics-slides/assets/icons/icon-72x72.png": "af6b8463602ed8398ad10c628b7c818bb429bd51",
+    "/lyrics-slides/assets/icons/icon-96x96.png": "005d5a97b8cabf567cecc3d58394eb8c9fbd8e40",
+    "/lyrics-slides/assets/splash/ipad_splash.png": "03efc52ba91026c06d2aa4700bd77a7c07e663ea",
+    "/lyrics-slides/assets/splash/ipadpro1_splash.png": "437b3ce7d9a2b0957b66a2bd32c288fb735db4b0",
+    "/lyrics-slides/assets/splash/ipadpro2_splash.png": "1f0fc45d2805a05ddce5dec77991ba17f6346b53",
+    "/lyrics-slides/assets/splash/ipadpro3_splash.png": "6d58b0a6300b50a2f4f042e435402e1ca94bff0c",
+    "/lyrics-slides/assets/splash/iphone5_splash.png": "16072089b8208f4b5e0c627b7460e389c92f83dd",
+    "/lyrics-slides/assets/splash/iphone6_splash.png": "5931522ea3883968b7daeaeab746e41d7f18ac14",
+    "/lyrics-slides/assets/splash/iphoneplus_splash.png": "25f572ac6b2115f3970e8f61a0119e54880ffd1a",
+    "/lyrics-slides/assets/splash/iphonex_splash.png": "5b2eb63eadc4db86aa6e319a944c8fe807429f36",
+    "/lyrics-slides/assets/splash/iphonexr_splash.png": "fef7ae1defb50e32bc97f1f348a16c629364b09c",
+    "/lyrics-slides/assets/splash/iphonexsmax_splash.png": "1d4ab7111d0e400c0e1368fd9dcca681dcac5077",
+    "/lyrics-slides/es2015-polyfills.1e04665e16f944715fd2.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
+    "/lyrics-slides/favicon.ico": "504da033109e0263b49fb58755314f2397a31c19",
+    "/lyrics-slides/index.html": "d773b92bd8d6818aefafeec7155278291c22b16c",
+    "/lyrics-slides/main.8f38b31f6a00b4a13ac7.js": "f663ffc5aec5d49edd8fc6d06a31aa5392632871",
+    "/lyrics-slides/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
+    "/lyrics-slides/runtime.231ee63dbc20b76778c6.js": "e60e2e02a9356c0ac59dd5ac3976a151b1f8b598",
+    "/lyrics-slides/scripts.b177a00d214e79b37d51.js": "a80a664857ae83b5d2f9b5d22856bc4bb24f1fdb",
+    "/lyrics-slides/styles.6207022d86134a05eebb.css": "dae72b1c9f2406df7c6262b583a450360d3aa492"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
