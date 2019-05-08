@@ -10,7 +10,7 @@
     <mat-hint i18n="@@lyricsSlideHint">A stanza is a slide</mat-hint>
   </mat-form-field>
 
-  <div class="form-field__logo" *ngIf="!lyricsForm.controls.logo.value">
+  <div class="form-field__logo" *ngIf="!lyricsForm.controls.logo.value" [@fadeInOut]>
     <p i18n="@@dropLogoFirstInfo">Drop your logo here to place on each slide</p>
     <p i18n="@@dropLogoSecondInfo">or click to choose a photo</p>
     <input class="input-logo" type="file" id="my_file" accept=".jpg, .jpeg, .png, .gif"
@@ -18,6 +18,9 @@
     <input type="hidden" name="fileHidden" />
   </div>
   <div class="form-field__logo" *ngIf="lyricsForm.controls.logo.value" [@fadeInOut]>
+    <button type="button" class="form-field__logo-reset" mat-icon-button (click)="onClickResetImage()">
+      <mat-icon class="icon-reset" inline>clear</mat-icon>
+    </button>
     <img class="image-logo" [src]="lyricsForm.controls.logo.value" alt="Slides Logo">
   </div>
 

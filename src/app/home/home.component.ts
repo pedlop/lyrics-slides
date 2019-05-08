@@ -14,13 +14,13 @@ import * as PptxGenJS from 'pptxgenjs';
       transition(
         ':enter', [
           style({ opacity: 0 }),
-          animate('400ms', style({ opacity: 1 }))
+          animate('500ms', style({ opacity: 1 }))
         ]
       ),
       transition(
         ':leave', [
           style({ opacity: 1 }),
-          animate('200ms', style({ opacity: 0 }))
+          animate('0ms', style({ opacity: 0 }))
         ]
       )
     ])
@@ -46,6 +46,10 @@ export class HomeComponent implements OnInit {
       uppercase: [false],
       fontSize: [72, Validators.compose([Validators.required, Validators.minLength(1), Validators.maxLength(2)])]
     });
+  }
+
+  onClickResetImage() {
+    this.lyricsForm.controls.logo.setValue(null);
   }
 
   onFileChange(event) {

@@ -18,6 +18,15 @@ textarea {
   margin-bottom: 1em;
 }
 
+.form-field__logo-reset {
+  position: absolute;
+  top: 0;
+  right: 0;
+  .icon-reset {
+    font-size: 1.5em;
+  }
+}
+
 .form-field__logo {
   position: relative;
   display: flex;
