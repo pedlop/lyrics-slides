@@ -3,8 +3,10 @@ import { SwUpdate } from '@angular/service-worker';
 import { DOCUMENT } from '@angular/platform-browser';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
-import { Subject } from 'rxjs';
-import { takeUntil, switchMap } from 'rxjs/operators';
+import { Subject, iif, of } from 'rxjs';
+import { takeUntil, switchMap, flatMap, mergeMap, tap } from 'rxjs/operators';
+
+import { AuthService } from './core/auth/auth.service';
 
 @Component({
   selector: 'plop-root',
@@ -20,7 +22,8 @@ export class AppComponent implements OnInit, OnDestroy {
     @Inject(DOCUMENT) private document: Document,
     private changeDetectorRef: ChangeDetectorRef,
     private swUpdate: SwUpdate,
-    private snackbar: MatSnackBar
+    private snackbar: MatSnackBar,
+    private authService: AuthService
   ) {
     this.unsubscribe = new Subject();
   }
@@ -32,6 +35,12 @@ export class AppComponent implements OnInit, OnDestroy {
       switchMap(() => this.snackbar.open('Newer version of the app is available', 'Refresh').onAction())
     ).subscribe(this.reloadPage, this.reloadPage);
     // }
+    // this.authService.get().pipe(
+    //   tap(r => console.log(r)),
+    //   mergeMap((user) => iif(() => user, of(true), this.authService.guestSignin()))
+    // ).subscribe(data => {
+    //   console.log(data);
+    // });
   }
 
   ngOnDestroy(): void {
