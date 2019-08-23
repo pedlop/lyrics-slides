@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1557265145551,
+  "timestamp": 1566567913106,
   "index": "/lyrics-slides/index.html",
   "assetGroups": [
     {
@@ -8,13 +8,13 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/lyrics-slides/5.d663a0941e4db4d55684.js",
-        "/lyrics-slides/es2015-polyfills.1e04665e16f944715fd2.js",
+        "/lyrics-slides/5.17c47992aaef0614a46f.js",
+        "/lyrics-slides/es2015-polyfills.c5dd28b362270c767b34.js",
         "/lyrics-slides/favicon.ico",
         "/lyrics-slides/index.html",
-        "/lyrics-slides/main.8fe03ceadc607fd05cf7.js",
+        "/lyrics-slides/main.284ad18a767ec31c15d1.js",
         "/lyrics-slides/polyfills.8bbb231b43165d65d357.js",
-        "/lyrics-slides/runtime.6d426f32cd31068f8b2e.js",
+        "/lyrics-slides/runtime.6110613a864b7b2e1988.js",
         "/lyrics-slides/scripts.b177a00d214e79b37d51.js",
         "/lyrics-slides/styles.e1bbd47bc476fc287471.css"
       ],
@@ -49,7 +49,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/lyrics-slides/5.d663a0941e4db4d55684.js": "6019f928c57eb2d4cae05787c2133024ed1b6239",
+    "/lyrics-slides/5.17c47992aaef0614a46f.js": "40eeda5dfb947b8ea8598f2196175cb9b0ed89d7",
     "/lyrics-slides/assets/icons/icon-128x128.png": "2557cf96b28150368aa8bd194afa9bd6fa1b1040",
     "/lyrics-slides/assets/icons/icon-144x144.png": "8311fbfea27ab2273a539b592ee855d0c5f0385b",
     "/lyrics-slides/assets/icons/icon-152x152.png": "fb5a58e985179fb1a93c3f0561a85501507b610a",
@@ -68,12 +68,12 @@
     "/lyrics-slides/assets/splash/iphonex_splash.png": "5b2eb63eadc4db86aa6e319a944c8fe807429f36",
     "/lyrics-slides/assets/splash/iphonexr_splash.png": "fef7ae1defb50e32bc97f1f348a16c629364b09c",
     "/lyrics-slides/assets/splash/iphonexsmax_splash.png": "1d4ab7111d0e400c0e1368fd9dcca681dcac5077",
-    "/lyrics-slides/es2015-polyfills.1e04665e16f944715fd2.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
+    "/lyrics-slides/es2015-polyfills.c5dd28b362270c767b34.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
     "/lyrics-slides/favicon.ico": "504da033109e0263b49fb58755314f2397a31c19",
-    "/lyrics-slides/index.html": "cb7be828c7886efa582d5b65de785d175381116e",
-    "/lyrics-slides/main.8fe03ceadc607fd05cf7.js": "d03a007eab85ccbdb47f94a06b4a13243c5680ef",
+    "/lyrics-slides/index.html": "df0406a5d44d269b27d0f44fd5b5694c67716486",
+    "/lyrics-slides/main.284ad18a767ec31c15d1.js": "fb6b5fe92b8d7f65e100321b59ff7d14f9416e08",
     "/lyrics-slides/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
-    "/lyrics-slides/runtime.6d426f32cd31068f8b2e.js": "f5d95ebb39c7a962a13886c3e7f21c1bac68bc71",
+    "/lyrics-slides/runtime.6110613a864b7b2e1988.js": "16cb4903d79c0fbb7ac07cbff0549a801ab92621",
     "/lyrics-slides/scripts.b177a00d214e79b37d51.js": "a80a664857ae83b5d2f9b5d22856bc4bb24f1fdb",
     "/lyrics-slides/styles.e1bbd47bc476fc287471.css": "f335b97948dcb27c5cbaa06eb8cbba165b3a7bbc"
   },
