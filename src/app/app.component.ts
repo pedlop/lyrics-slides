@@ -22,8 +22,8 @@ export class AppComponent implements OnInit, OnDestroy {
     @Inject(DOCUMENT) private document: Document,
     private changeDetectorRef: ChangeDetectorRef,
     private swUpdate: SwUpdate,
-    private snackbar: MatSnackBar,
-    private authService: AuthService
+    private snackbar: MatSnackBar
+    // private authService: AuthService
   ) {
     this.unsubscribe = new Subject();
   }
